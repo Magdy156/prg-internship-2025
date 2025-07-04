@@ -1,0 +1,3 @@
+id,name,skills,max_hours,availability_start,availability_end
+E1,John Doe,"cook,cashier",89,2025-07-01T08:00:00,2025-07-14T22:00:00
+E2,Jane Smith,cook,40,2025-07-01T06:00:00,2025-07-14T18:00:00
