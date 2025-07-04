@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import '../App.css';
 
-interface Employee {
+export interface Employee {
   id: string;
   name: string;
   skills: string[];
@@ -11,7 +11,7 @@ interface Employee {
   availability_end: string;
 }
 
-interface Shift {
+export interface Shift {
   id: string;
   role: string;
   start_time: string;
