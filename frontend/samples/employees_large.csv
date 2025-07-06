@@ -1,0 +1,51 @@
+id,name,skills,max_hours,availability_start,availability_end
+E1,Alice Smith,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E2,Bob Johnson,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E3,Carol Williams,"[manager, stocker]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E4,David Brown,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E5,Emma Davis,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E6,Frank Wilson,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E7,Grace Taylor,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E8,Henry Anderson,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E9,Isabella Martinez,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E10,James Thomas,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E11,Kate Lee,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E12,Liam Clark,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E13,Mia Lewis,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E14,Noah Walker,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E15,Olivia Hall,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E16,Paul Allen,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E17,Quinn Young,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E18,Rachel King,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E19,Sam Wright,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E20,Emma Davis,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E21,Tom Scott,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E22,Uma Green,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E23,Victor Adams,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E24,Wendy Baker,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E25,Xavier Hill,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E26,Yara Nelson,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E27,Zoe Carter,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E28,Adam Parker,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E29,Bella Evans,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E30,Charlie Reed,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E31,Diana Foster,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E32,Ethan Gray,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E33,Fiona Hayes,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E34,George Cox,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E35,Hannah Bell,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E36,Ian Ward,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E37,Julia Ross,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E38,Kyle Fox,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E39,Laura Cole,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E40,Mason Perry,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E41,Nina Stone,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E42,Oliver Hunt,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E43,Paula Long,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E44,Quentin Ford,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E45,Rose Dean,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E46,Steve Lowe,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E47,Tina West,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E48,Ulysses Shaw,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E49,Vera Lane,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E50,Will Cook,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59

@@ -1,0 +1,21 @@
+id,role,start_time,end_time,required_skill
+S1,Manager Shift,2025-07-01T09:00:00,2025-07-01T17:00:00,manager
+S2,Cashier Shift,2025-07-01T09:00:00,2025-07-01T13:00:00,cashier
+S3,Stocker Shift,2025-07-01T06:00:00,2025-07-01T14:00:00,stocker
+S4,Cashier Shift,2025-07-01T13:00:00,2025-07-01T17:00:00,cashier
+S5,Manager Shift,2025-07-02T09:00:00,2025-07-02T17:00:00,manager
+S6,Cashier Shift,2025-07-02T09:00:00,2025-07-02T13:00:00,cashier
+S7,Stocker Shift,2025-07-02T06:00:00,2025-07-02T14:00:00,stocker
+S8,Cashier Shift,2025-07-02T13:00:00,2025-07-02T17:00:00,cashier
+S9,Manager Shift,2025-07-03T09:00:00,2025-07-03T17:00:00,manager
+S10,Cashier Shift,2025-07-03T09:00:00,2025-07-03T13:00:00,cashier
+S11,Stocker Shift,2025-07-03T06:00:00,2025-07-03T14:00:00,stocker
+S12,Cashier Shift,2025-07-03T13:00:00,2025-07-03T17:00:00,cashier
+S13,Manager Shift,2025-07-04T09:00:00,2025-07-04T17:00:00,manager
+S14,Cashier Shift,2025-07-04T09:00:00,2025-07-04T13:00:00,cashier
+S15,Stocker Shift,2025-07-04T06:00:00,2025-07-04T14:00:00,stocker
+S16,Cashier Shift,2025-07-04T13:00:00,2025-07-04T17:00:00,cashier
+S17,Manager Shift,2025-07-05T09:00:00,2025-07-05T17:00:00,manager
+S18,Cashier Shift,2025-07-05T09:00:00,2025-07-05T13:00:00,cashier
+S19,Stocker Shift,2025-07-05T06:00:00,2025-07-05T14:00:00,stocker
+S20,Cashier Shift,2025-07-05T13:00:00,2025-07-05T17:00:00,cashier

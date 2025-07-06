@@ -1,0 +1,11 @@
+id,name,skills,max_hours,availability_start,availability_end
+E1,Alice Smith,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E2,Bob Johnson,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E3,Carol Williams,"[manager, stocker]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
+E4,David Brown,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E5,Emma Davis,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E6,Frank Wilson,"[manager]",38,2025-07-01T00:00:00,2025-07-07T23:59:59
+E7,Grace Taylor,"[cashier, stocker]",35,2025-07-01T08:00:00,2025-07-07T20:00:00
+E8,Henry Anderson,"[cashier]",30,2025-07-01T09:00:00,2025-07-07T17:00:00
+E9,Isabella Martinez,"[stocker]",32,2025-07-01T06:00:00,2025-07-07T18:00:00
+E10,James Thomas,"[manager, cashier]",40,2025-07-01T00:00:00,2025-07-07T23:59:59
