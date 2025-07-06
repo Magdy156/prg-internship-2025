@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button, Card, CardContent, Table, TableBody, TableCell, TableHead, TableRow, Alert, Box, Typography } from '@mui/material';
 import Papa from 'papaparse';
 import '../App.css';
 
@@ -98,61 +99,104 @@ const CsvImport: React.FC = () => {
   }, []);
 
   return (
-    <div className="csv-import">
-      <h2>Upload CSV Files</h2>
-      <div>
-        <label>Employees CSV: </label>
-        <input type="file" accept=".csv" onChange={(e) => handleFileUpload(e, 'employees')} />
-      </div>
-      <div>
-        <label>Shifts CSV: </label>
-        <input type="file" accept=".csv" onChange={(e) => handleFileUpload(e, 'shifts')} />
-      </div>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      {success && <p style={{ color: 'green' }}>{success}</p>}
+    <Box className="csv-import">
+      <Card className="card-container">
+        <CardContent>
+          <Typography variant="h5" gutterBottom>
+            Upload CSV Files
+          </Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Button variant="contained" component="label" sx={{ textTransform: 'none' }}>
+                Upload Employees CSV
+                <input type="file" accept=".csv" hidden onChange={(e) => handleFileUpload(e, 'employees')} />
+              </Button>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Button variant="contained" component="label" sx={{ textTransform: 'none' }}>
+                Upload Shifts CSV
+                <input type="file" accept=".csv" hidden onChange={(e) => handleFileUpload(e, 'shifts')} />
+              </Button>
+            </Box>
+            {error && <Alert severity="error">{error}</Alert>}
+            {success && <Alert severity="success">{success}</Alert>}
+          </Box>
+        </CardContent>
+      </Card>
 
-      {employees.length > 0 && (
-        <div>
-          <h3>Employees Data</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>ID</th><th>Name</th><th>Skills</th><th>Max Hours</th><th>Start</th><th>End</th>
-              </tr>
-            </thead>
-            <tbody>
-              {employees.map((emp, i) => (
-                <tr key={i}>
-                  <td>{emp.id}</td><td>{emp.name}</td><td>{emp.skills.join(', ')}</td><td>{emp.max_hours}</td>
-                  <td>{emp.availability_start}</td><td>{emp.availability_end}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+      {(employees.length > 0 || shifts.length > 0) && (
+        <Box className="tables-container">
+          {employees.length > 0 && (
+            <Card className="card-container table-card">
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Employees Data
+                </Typography>
+                <Box className="table-container">
+                  <Table stickyHeader size="small">
+                    <TableHead>
+                      <TableRow>
+                        <TableCell>ID</TableCell>
+                        <TableCell>Name</TableCell>
+                        <TableCell>Skills</TableCell>
+                        <TableCell>Max Hours</TableCell>
+                        <TableCell>Start</TableCell>
+                        <TableCell>End</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {employees.map((emp, i) => (
+                        <TableRow key={i} hover>
+                          <TableCell>{emp.id}</TableCell>
+                          <TableCell>{emp.name}</TableCell>
+                          <TableCell>{emp.skills.join(', ')}</TableCell>
+                          <TableCell>{emp.max_hours}</TableCell>
+                          <TableCell>{emp.availability_start}</TableCell>
+                          <TableCell>{emp.availability_end}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </Box>
+              </CardContent>
+            </Card>
+          )}
+          {shifts.length > 0 && (
+            <Card className="card-container table-card">
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Shifts Data
+                </Typography>
+                <Box className="table-container">
+                  <Table stickyHeader size="small">
+                    <TableHead>
+                      <TableRow>
+                        <TableCell>ID</TableCell>
+                        <TableCell>Role</TableCell>
+                        <TableCell>Start Time</TableCell>
+                        <TableCell>End Time</TableCell>
+                        <TableCell>Required Skill</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {shifts.map((shift, i) => (
+                        <TableRow key={i} hover>
+                          <TableCell>{shift.id}</TableCell>
+                          <TableCell>{shift.role}</TableCell>
+                          <TableCell>{shift.start_time}</TableCell>
+                          <TableCell>{shift.end_time}</TableCell>
+                          <TableCell>{shift.required_skill}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </Box>
+              </CardContent>
+            </Card>
+          )}
+        </Box>
       )}
-
-      {shifts.length > 0 && (
-        <div>
-          <h3>Shifts Data</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>ID</th><th>Role</th><th>Start Time</th><th>End Time</th><th>Required Skill</th>
-              </tr>
-            </thead>
-            <tbody>
-              {shifts.map((shift, i) => (
-                <tr key={i}>
-                  <td>{shift.id}</td><td>{shift.role}</td><td>{shift.start_time}</td><td>{shift.end_time}</td>
-                  <td>{shift.required_skill}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
+    </Box>
   );
 };
 

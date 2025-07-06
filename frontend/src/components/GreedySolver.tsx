@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Card, CardContent, Typography, Box, Divider } from '@mui/material';
 import type { Employee, Shift } from './CsvImport';
+import '../App.css';
 
-interface Assignment {
+export interface Assignment {
   shiftId: string;
   empId: string;
   empName: string;
@@ -23,7 +25,7 @@ const GreedySolver: React.FC = () => {
       const shiftStart = new Date(shift.start_time);
       const shiftEnd = new Date(shift.end_time);
 
-      // converting from milli seconds to hours
+      // converting from milliseconds to hours
       const shiftDurationHours = (shiftEnd.getTime() - shiftStart.getTime()) / (1000 * 60 * 60);
 
       // Find eligible employees
@@ -61,19 +63,30 @@ const GreedySolver: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Greedy Schedule</h2>
-      {schedule.length > 0 ? (
-        <ul>
-          {schedule.map((item, idx) => (
-            <li key={idx}>
-              Shift <strong>{item.shiftId}</strong> assigned to <strong>{item.empName}</strong> (ID: {item.empId})
-            </li>
-          ))}
-        </ul>
-      ) : (<p>No schedule. Upload CSVs first.</p>)
-      }
-    </div>
+    <Card className="card-container">
+      <CardContent>
+        <Typography variant="h6" gutterBottom>
+          Greedy Schedule
+        </Typography>
+        {schedule.length > 0 ? (
+          <Box className="schedule-grid">
+            {schedule.map((item, idx) => (
+              <Box key={idx} className="schedule-item">
+                <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                  Shift {item.shiftId}
+                </Typography>
+                <Typography variant="caption" color="text.secondary">
+                  Assigned to {item.empName} (ID: {item.empId})
+                </Typography>
+                {idx < schedule.length - 1 && <Divider sx={{ my: 1 }} />}
+              </Box>
+            ))}
+          </Box>
+        ) : (
+          <Typography>No schedule. Upload CSVs first.</Typography>
+        )}
+      </CardContent>
+    </Card>
   );
 };
 
